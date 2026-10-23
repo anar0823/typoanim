@@ -1,0 +1,24 @@
+{
+  "name": "typoanim-qa",
+  "version": "1.0.0",
+  "description": "Super QA Playwright suite for https://www.typoanim.com",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:guest": "playwright test --project=guest",
+    "test:free": "playwright test --project=free",
+    "test:premium": "playwright test --project=premium",
+    "test:quota": "QA_QUOTA=1 playwright test --grep @quota"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anar0823/typoanim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anar0823/typoanim/issues"
+  },
+  "homepage": "https://github.com/anar0823/typoanim#readme",
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  },
+  "private": true
+}

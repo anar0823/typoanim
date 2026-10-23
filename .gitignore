@@ -1,0 +1,16 @@
+node_modules/
+scratch/
+.auth/
+.env*
+test-results/
+playwright-report/
+.auth*.json
+# raw crawl output from earlier passes (large / may contain account details)
+docs/super-qa/report/logged-in-*/
+docs/super-qa/report/logged-out/
+docs/super-qa/report/gate/
+docs/super-qa/report/discovered-links/
+docs/super-qa/report/status-sweep.json
+docs/super-qa/sitemap-urls.txt
+scripts/status-sweep.mjs
+!.env.example
