@@ -12,13 +12,13 @@
 | Pages crawled in a real browser (1440px + 375px) | 136 guest, 14 free, 14 premium |
 | Automated tests in the suite | 124 (120 run by default, 4 opt-in quota tests) |
 | Last full run | 120 passed (5 of them are known-bug tests that fail as expected), 4 skipped |
-| Bugs filed | 6 (0 high · 2 medium · 4 low) |
+| Bugs filed | 6 (0 high · 1 medium, unconfirmed · 5 low; 2 of the 6 still need verification) |
 
 ## Bugs
 
 | # | Priority | What | Who sees it |
 |---|---|---|---|
-| [#1](https://github.com/anar0823/typoanim/issues/1) | medium | `/contact` script crashes on load: all messages go to hello@ whatever topic is chosen, and the character counters are missing | everyone |
+| [#1](https://github.com/anar0823/typoanim/issues/1) | low | `/contact` script crashes on load and the character counters are missing. Inbox check confirmed messages still reach the right inbox (the server routes by topic) | everyone |
 | [#2](https://github.com/anar0823/typoanim/issues/2) | medium — **unconfirmed** | Guest "3 free downloads a day" limit appeared to reset when cookies were cleared. The QA machine's IP changed on every request, so this may be a test artifact | guests |
 | [#3](https://github.com/anar0823/typoanim/issues/3) | low — **unconfirmed** | Profile "X/3 free downloads left" disagrees with the template page and with what the server allows | free users |
 | [#4](https://github.com/anar0823/typoanim/issues/4) | low | Premium subscribers still see "Upgrade" in the header | premium users |

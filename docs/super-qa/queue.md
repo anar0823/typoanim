@@ -11,7 +11,7 @@ States: `[ ]` queued · `[x]` green spec · `[b]` bug filed · `[!]` skipped · 
 - [x] `/pricing` — pages.spec.ts, forms.spec.ts (iter 1)
 - [x] `/black-friday`, `/black-friday/premiere-pro`, `/black-friday/after-effects` — pages.spec.ts (iter 1)
 - [x] `/about`, `/faq`, `/license`, `/terms`, `/privacy`, `/refund`, `/dmca` — pages.spec.ts (iter 1)
-- [b] `/contact` — page script crashes, topic routing broken → #1 (iter 1)
+- [b] `/contact` — page script crashes (routing verified OK by a real inbox check) → #1 (iter 1)
 - [x] `/blog` + 4 posts — pages.spec.ts (iter 1)
 - [x] `/login` — forms.spec.ts (iter 1)
 - [x] `/register` — forms.spec.ts (iter 1; no account created, POST intercepted)

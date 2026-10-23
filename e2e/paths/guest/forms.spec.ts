@@ -70,13 +70,6 @@ test('contact: page script runs without errors', async ({ page, forensics }) => 
   expect(forensics.pageErrors).toEqual([]);
 });
 
-test('contact: choosing "Refund" routes the message to refund@', async ({ page }) => {
-  knownBug('contact|script-crash|topic-routing');
-  await page.goto('/contact');
-  await page.selectOption('#cTopic', 'Refund');
-  await expect(page.locator('#toField')).toHaveValue('refund@typoanim.com');
-});
-
 test('contact: empty submit is blocked and nothing is sent', async ({ page }) => {
   let posted = false;
   await page.route('**/contact**', (r) => (r.request().method() === 'POST' ? ((posted = true), r.abort()) : r.continue()));
