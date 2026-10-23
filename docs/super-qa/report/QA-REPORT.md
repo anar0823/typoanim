@@ -19,11 +19,15 @@
 | # | Priority | What | Who sees it |
 |---|---|---|---|
 | [#1](https://github.com/anar0823/typoanim/issues/1) | medium | `/contact` script crashes on load: all messages go to hello@ whatever topic is chosen, and the character counters are missing | everyone |
-| [#2](https://github.com/anar0823/typoanim/issues/2) | medium | Guest "3 free downloads a day" limit resets when cookies are cleared | guests |
-| [#3](https://github.com/anar0823/typoanim/issues/3) | low | Profile "X/3 free downloads left" disagrees with the template page and with what the server allows | free users |
+| [#2](https://github.com/anar0823/typoanim/issues/2) | medium — **unconfirmed** | Guest "3 free downloads a day" limit appeared to reset when cookies were cleared. The QA machine's IP changed on every request, so this may be a test artifact | guests |
+| [#3](https://github.com/anar0823/typoanim/issues/3) | low — **unconfirmed** | Profile "X/3 free downloads left" disagrees with the template page and with what the server allows | free users |
 | [#4](https://github.com/anar0823/typoanim/issues/4) | low | Premium subscribers still see "Upgrade" in the header | premium users |
 | [#5](https://github.com/anar0823/typoanim/issues/5) | low | Signing in from a protected page lands on the homepage; signed-in users can still open /login and /register | all users |
 | [#6](https://github.com/anar0823/typoanim/issues/6) | low | `/forgot-password` has two meta descriptions (one copied from Contact) | search engines |
+
+## Test-environment caveat
+
+The QA machine's outbound IP changes on almost every request (20 requests came from 11 different addresses). Anything the site limits per IP, such as the guest download quota, can't be judged reliably from it. #2 and #3 are labelled `needs-verification` and should be checked from a normal connection.
 
 ## What works well
 
